@@ -1,0 +1,42 @@
+mailbody:
+  registeruser:
+    location: src/main/java/com/otz/service/user_registration_body.txt
+  recoverpwd:
+    location: src/main/java/com/otz/service/recover_pwd_body.txt
+spring:
+  datasource:
+    username: TURGUT
+    url: jdbc:mysql://localhost:3306/minproj3
+    password: TURGUT
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+  mail:
+   host: smtp.gmail.com
+   port: 587
+   username: rajaswain6969@gmail.com
+   password: nglabxcvnfgrpdxs
+   protocol: smtp
+   properties:
+    mail:
+     smtp:
+      auth: true
+      starttls:
+       enable: true
+      connectiontimeout: 5000
+      timeout: 5000
+      writetimeout: 5000
+
+  
+server:
+  port: '8089'
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG	
+
